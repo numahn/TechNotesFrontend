@@ -1,5 +1,8 @@
 import React from 'react'
 import '../css/Home.css'
+//Mui Components
+import Button from '@mui/material/Button'
+
 export default function Home() {
   return (
     <>
@@ -7,11 +10,13 @@ export default function Home() {
         <span className="firstHalf">Tech</span>Notes
       </div>
       <div className='blurb'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Tech Notes is a free-to-use website where you can create your own notes!
+        Simply create an account, log in, and use our online editing software to check and keep
+        your notes anywhere you go!
+      </div>
+      <div className='buttons'>
+          <button className='button signup'>Sign Up</button>
+          <button className='button login'>Log In</button>
       </div>
     </>
   )
