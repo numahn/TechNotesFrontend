@@ -1,5 +1,8 @@
 import React from 'react'
 import '../css/Home.css'
+//Mui Components
+import Button from '@mui/material/Button'
+
 export default function Home() {
   return (
     <>
@@ -12,6 +15,10 @@ export default function Home() {
         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
         sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div className='buttons'>
+          <button className='signup'>Sign Up</button>
+          <button className='signup'>Log In</button>
       </div>
     </>
   )
