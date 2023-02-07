@@ -23,7 +23,7 @@
   font-size: 36px;
   line-height: 48px;
 }
-
+/*Buttons CSS, button class for all buttons, maybe change to home buttons*/
 .buttons{
   display: flex;
   justify-content: space-around;
