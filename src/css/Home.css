@@ -1,7 +1,8 @@
 .logo{
-  position: absolute;
-  left: 67px;
-  top: 113px;
+  
+  display: flex;
+  padding-left: 67px;
+  padding-top: 113px;
 
   font-style: normal;
   font-weight: 400;
@@ -15,3 +16,10 @@
   color: #0B77F5;
 }
 
+.blurb{
+  display: flex;
+  padding-left: 680px;
+  padding-top: 150px;
+  font-size: 36px;
+  line-height: 48px;
+}
