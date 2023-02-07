@@ -26,15 +26,21 @@
 
 .buttons{
   display: flex;
-  justify-content: flex-end;
-  padding-top: 20px;
+  justify-content: space-around;
+  padding-top: 100px;
+  margin-left: 800px;
 }
-.signup{
-  background-color: #3e3e3e;
+.button{
   width: 360px;
   height: 80px;
   border-radius: 25px;
   font-size: 40px;
   line-height: 58px;
   color: #fff;
+}
+.signup{
+  background-color: #3e3e3e;
+}
+.login{
+  background-color: #0B77F5;
 }
