@@ -17,7 +17,7 @@ export default function Home() {
         your notes anywhere you go!
       </div>
       <div className='buttons'>
-          <button className='button signup'>Sign Up</button>
+          <button className='button signup' onClick={() => navigate("/signup")}>Sign Up</button>
           <button className='button login' onClick={() => navigate("/login")}>Log In</button>
       </div>
     </>
