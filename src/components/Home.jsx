@@ -2,8 +2,10 @@ import React from 'react'
 import '../css/Home.css'
 //Mui Components
 import Button from '@mui/material/Button'
+import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
+  const navigate = useNavigate()
   return (
     <>
       <div className='logo'>
@@ -16,7 +18,7 @@ export default function Home() {
       </div>
       <div className='buttons'>
           <button className='button signup'>Sign Up</button>
-          <button className='button login'>Log In</button>
+          <button className='button login' onClick={() => navigate("/login")}>Log In</button>
       </div>
     </>
   )
