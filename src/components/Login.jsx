@@ -11,11 +11,9 @@ export default function Login() {
                     </div>
                     <div className='login-form'>
                         <div>
-                            <label for="username">Username</label>
                             <input className="form-username" id="username" placeholder='Username'></input>
                         </div>
                         <div>
-                            <label for="password">Password</label>
                             <input className="form-password" id="password" placeholder='Password'></input>
                         </div>
                     </div>

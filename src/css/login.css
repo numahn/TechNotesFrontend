@@ -28,10 +28,17 @@
 .login-form{
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
+    padding-bottom: 5px;
+}
+.form-username{
+    padding-right: -1px;
 }
 input{
-    padding: 12px 20px;
-    font-size: 16px;
-    border-color: 10px solid black;
+    background: none;
+    border: none;
+    height: 30px;
+    outline: none;
+    border-bottom: black 1px solid;
+    color: white;
 }
