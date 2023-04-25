@@ -8,6 +8,7 @@ export default function Home() {
   const navigate = useNavigate()
   return (
     <>
+    <div className="container">
       <div className='logo'>
         <span className="firstHalf">Tech</span>Notes
       </div>
@@ -20,6 +21,7 @@ export default function Home() {
           <button className='button signup' onClick={() => navigate("/signup")}>Sign Up</button>
           <button className='button login' onClick={() => navigate("/login")}>Log In</button>
       </div>
+    </div>
     </>
   )
 }
