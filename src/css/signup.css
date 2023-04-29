@@ -1,0 +1,29 @@
+.signup-container{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-wrap{
+  width: 450px;
+  height: 450px;
+  background-color: #4e4e4e;
+}
+.signup-title{
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  font-size: 38px;
+  margin-left: -115px;
+  padding-bottom: 20px;
+}
+.signup-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -11,13 +11,13 @@ export default function Login() {
                     </div>
                     <div className='login-form'>
                         <div>
-                            <input className="form-username" id="username" placeholder='Username'></input>
+                            <input className="user-form form-username" id="username" placeholder='Username'/>
                         </div>
                         <div>
-                            <input className="form-password" type="password" id="password" placeholder='Password'></input>
+                            <input className="user-form form-password" type="password" id="password" placeholder='Password'/>
                         </div>
                         <div className="form-button">
-                            <input type='submit' className='submit' value="Log In"></input>
+                            <input type='submit' className='submit' value="Log In"/>
                         </div>
                     </div>
                 </div>
