@@ -14,9 +14,19 @@
   margin-bottom: 50px;
 }
 
+
+.lists{
+  display: flex;
+  justify-content: center;
+}
 .list{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #404040;
+  min-width: 1750px;
+  min-height: 80px;
+  border-radius: 10px;
+  font-size: 40px;
 }
