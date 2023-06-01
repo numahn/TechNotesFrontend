@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <>
       <div className='navi'>
-        asdf
+        asdfaerea
       </div>
     </>
   )

@@ -8,6 +8,7 @@ export default function List() {
       <Navbar/>
       <div className="list-container">
         <div className="list-title">My Notes</div>
+        <div className="sections"></div>
         <div className="lists">
           <div className="list">asdf</div> 
         </div>
