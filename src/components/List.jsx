@@ -3,6 +3,7 @@ import "../css/list.css"
 import Navbar from './Navbar'
 
 export default function List() {
+  /*Make this mobile compatabile in the future?*/
   return (
     <>
       <Navbar/>
@@ -13,7 +14,10 @@ export default function List() {
           <p className="date">Date</p>
         </div>
         <div className="lists">
-          <div className="list">asdf</div> 
+          <div className="list">
+            <div className='list-title'>Title</div>
+            <div className='list-date'>Date</div>  
+          </div> 
         </div>
       </div>
     </>
