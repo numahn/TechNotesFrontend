@@ -6,7 +6,7 @@
   right: 0px;
 }
 
-.list-title{
+.lists-title{
   display: flex;
   justify-content: center;
   font-size: 40px;
@@ -43,7 +43,7 @@
   align-items: center;
   background-color: #404040;
   min-width: 1750px;
-  max-height: 100px;
+  min-height: 75px;
   border-radius: 10px;
-  font-size: 28px;
+  font-size: 40px;
 }
