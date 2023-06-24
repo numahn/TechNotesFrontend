@@ -1,0 +1,32 @@
+.nav{
+  background-color: #404040;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-logo{
+  max-width: 36px;
+  margin-left: 5px;
+}
+
+.nav-username{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 25px;
+  font-size: 30px;
+}
+
+.nav-dropdown{
+  max-height: 6px;
+  margin-top: 51px;
+  margin-left: 2px;
+}

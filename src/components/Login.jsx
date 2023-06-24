@@ -4,7 +4,7 @@ import "../css/login.css"
 export default function Login() {
     return (
         <>
-            <div className="login-container">
+            <div className="container">
                 <div className="login-wrap">
                     <div className='login-title'>
                         Log In
