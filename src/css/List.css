@@ -19,31 +19,39 @@
   flex-direction: row;
   justify-content: space-between;
   font-size: 24px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .title{
-  margin-bottom: -40px;
-  padding-left: 100px;
+ margin: 0;
 }
 .date{
-  padding-right: 100px;
+  margin: 0;
 }
 
 .lists{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
 }
+
 .list{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-color: #404040;
+  font-size: 40px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 75px;
+  align-items: center;
   padding-left: 25px;
   padding-right: 25px;
-  align-items: center;
-  background-color: #404040;
-  min-width: 1750px;
-  min-height: 75px;
-  border-radius: 10px;
-  font-size: 40px;
+}
+.list:hover{
+  background-color: #2e2e2e;
 }

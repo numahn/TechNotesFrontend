@@ -18,6 +18,10 @@ export default function List() {
             <div className='list-title'>Title</div>
             <div className='list-date'>Date</div>  
           </div> 
+          <div className="list">
+            <div className='list-title'>Title</div>
+            <div className='list-date'>Date</div>  
+          </div> 
         </div>
       </div>
     </>
