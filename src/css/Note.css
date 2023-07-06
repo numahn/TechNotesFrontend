@@ -1,0 +1,38 @@
+.note-container{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-left: 200px;
+}
+
+.note-title{
+  display: flex;
+  font-size: 46px;
+  margin-top: 100px;
+  margin-bottom: 5px;
+}
+
+.note-text{
+  background-color: #3E3E3E;
+  height: 600px;
+  margin-right: 200px;
+  font-size: 24px;
+}
+
+.save-button{
+  width: 250px;
+  height: 70px;
+  border-radius: 40px;
+  background: #0B77F5;
+  color: #FFF;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 1230px;
+  margin-top: 10px;
+  cursor: pointer;
+}
