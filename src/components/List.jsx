@@ -9,12 +9,9 @@ export default function List(props) {
   /*Make this mobile compatabile in the future?*/
   const [notes, setNotes] = useState([{}])
   const navigate = useNavigate();
-  function parseJwt (token) {
-    console.log("token", jwt(token))
-    return jwt(token)
-  }
+  
   const userInfo = {
-    userID: parseJwt(props.token).id
+    userID: jwt(props.token).id
   }
 
   const requestOptions = {
@@ -24,7 +21,6 @@ export default function List(props) {
   }
 
   const getNotes = async () => {
-    console.log("reqOp", requestOptions)
     const response = await fetch("http://localhost:3001/list", requestOptions)
     const data = await response.json()
     console.log("res", data)
