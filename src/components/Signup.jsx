@@ -24,10 +24,8 @@ export default function Login() {
   }
 
   const handleClick = async (e) => {
-      console.log(requestOptions)
       const response = await fetch('http://localhost:3001/signup', requestOptions)
       const data = await response.json()
-      console.log(data)
       e.preventDefault()
       if(data.success){
           navigate("/list")

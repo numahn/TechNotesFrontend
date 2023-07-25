@@ -47,6 +47,7 @@
 .form-button{
     margin-top: 30px;
     margin-left: 170px;
+    margin-bottom: 10px;
 }
 .submit{
     background: #0B77F5;
@@ -59,4 +60,7 @@
     border-radius: 8px;
     color: rgba(255, 255, 255, 0.8);
     width: 80px;
+}
+.error{
+    font-size: 20px;
 }
