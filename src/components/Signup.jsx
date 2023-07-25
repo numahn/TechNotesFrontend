@@ -28,7 +28,7 @@ export default function Login() {
       const data = await response.json()
       e.preventDefault()
       if(data.success){
-          navigate("/list")
+          navigate("/login")
       }
       else{
         document.querySelector(".sign-error").innerHTML = data.message

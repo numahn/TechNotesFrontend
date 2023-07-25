@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Routes, Route} from 'react-router-dom'
 //Component Imports
 import Home from './components/Home'
@@ -8,13 +8,15 @@ import List from './components/List'
 import Note from './components/Note'
 
 export default function App() {
+  const [token, setToken] = useState("")
+
   return (
     <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/login' element={<Login/>}/>
+      <Route path='/' element={<Home/>} token={token} setToken={setToken}/>
+      <Route path='/login' element={<Login/>} token={token} setToken={setToken}/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/list' element={<List/>}/>
-      <Route path='/note' element={<Note/>}/>
+      <Route path='/list' element={<List/>} token={token} setToken={setToken}/>
+      <Route path='/note' element={<Note/>} token={token} setToken={setToken}/>
     </Routes>)
    
 }
