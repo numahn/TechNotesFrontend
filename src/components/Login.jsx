@@ -25,6 +25,7 @@ export default function Login(props) {
         const data = await response.json()
         e.preventDefault()
         if(data.success){
+            props.setToken(data.token)
             navigate("/list")
         }
         else{

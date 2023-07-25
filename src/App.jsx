@@ -13,10 +13,10 @@ export default function App() {
   return (
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/login' element={<Login/>} token={token} setToken={setToken}/>
+      <Route path='/login' element={<Login token={token} setToken={setToken}/> }/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/list' element={<List/>} token={token} setToken={setToken}/>
-      <Route path='/note' element={<Note/>} token={token} setToken={setToken}/>
+      <Route path='/list' element={<List token={token} setToken={setToken}/>} />
+      <Route path='/note' element={<Note token={token} setToken={setToken}/>} />
     </Routes>)
    
 }
