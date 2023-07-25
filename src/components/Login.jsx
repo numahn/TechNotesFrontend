@@ -49,7 +49,7 @@ export default function Login() {
                         <div className="form-button">
                             <input type='submit' className='submit' value="Log In" onClick={(e) => handleClick(e)}/>
                         </div>
-                        <div className='error'>test</div>
+                        <div className='error'></div>
                     </div>
                 </div>
             </div>

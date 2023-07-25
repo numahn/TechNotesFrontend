@@ -30,6 +30,9 @@ export default function Login() {
       if(data.success){
           navigate("/list")
       }
+      else{
+        document.querySelector(".sign-error").innerHTML = data.message
+      }
   }
 
   return (
@@ -53,6 +56,7 @@ export default function Login() {
             <div className="form-button">
               <input type="submit" className="submit" value="Log In" onClick={(e) => handleClick(e)}/>
             </div>
+            <div className="sign-error"></div>
           </div>
         </div>
       </div>
