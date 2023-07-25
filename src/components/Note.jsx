@@ -2,7 +2,7 @@ import React from 'react'
 import "../css/Note.css"
 import Navbar from './Navbar'
 
-export default function Note() {
+export default function Note(props) {
   return (
     <>
       <Navbar/>

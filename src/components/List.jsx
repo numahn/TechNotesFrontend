@@ -2,7 +2,7 @@ import React from 'react'
 import "../css/list.css"
 import Navbar from './Navbar'
 
-export default function List() {
+export default function List(props) {
   /*Make this mobile compatabile in the future?*/
   return (
     <>

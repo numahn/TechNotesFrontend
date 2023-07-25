@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import "../css/login.css"
 
-export default function Login() {
+export default function Login(props) {
 
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
