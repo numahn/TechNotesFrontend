@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import "../css/list.css"
+import jwt from 'jwt-decode';
 import Navbar from './Navbar'
 
 export default function List(props) {
@@ -9,26 +10,24 @@ export default function List(props) {
   const [notes, setNotes] = useState([{}])
   const navigate = useNavigate();
   function parseJwt (token) {
-    var base64Url = token.split('.')[1];
-    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-    var jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function(c) {
-        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
-    }).join(''));
-
-    return JSON.parse(jsonPayload);
+    console.log("token", jwt(token))
+    return jwt(token)
+  }
+  const userInfo = {
+    userID: parseJwt(props.token).id
   }
 
   const requestOptions = {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(parseJwt(props.token))
+    body: JSON.stringify(userInfo)
   }
 
   const getNotes = async () => {
+    console.log("reqOp", requestOptions)
     const response = await fetch("http://localhost:3001/list", requestOptions)
-    console.log(response)
     const data = await response.json()
-    console.log(data)
+    console.log("res", data)
     setNotes(data.notes)
   }
   useEffect(() => {
