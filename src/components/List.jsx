@@ -23,12 +23,10 @@ export default function List(props) {
   const getNotes = async () => {
     const response = await fetch("http://localhost:3001/list", requestOptions)
     const data = await response.json()
-    console.log("res", data)
     setNotes(data.notes)
   }
   useEffect(() => {
     getNotes()
-    console.log("n", notes.length)
     
  }, [])
   
@@ -54,7 +52,7 @@ export default function List(props) {
             return(
               <div key={i} className="list">
                 <div className='list-title'>{note.title}</div>
-                <div className='list-date'>{note.date_created.substr(0,10)}</div>  
+                <div className='list-date'>{note.date_created? note.date_created.substr(0,10) : "0000-00-00"}</div>  
               </div> 
             )
           })}
