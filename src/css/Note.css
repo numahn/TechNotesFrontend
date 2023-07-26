@@ -12,13 +12,20 @@
   font-size: 46px;
   margin-top: 100px;
   margin-bottom: 5px;
+  background-color: black;
+  color: white;
+  border: none;
 }
 
 .note-text{
   background-color: #3E3E3E;
   height: 600px;
+  min-width: 1475px;
   margin-right: 200px;
   font-size: 24px;
+  color: white;
+  border: none;
+  resize: none;
 }
 
 .save-button{

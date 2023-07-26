@@ -1,17 +1,30 @@
 import React from 'react'
 import "../css/Note.css"
 import Navbar from './Navbar'
+import { useState, useEffect } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 export default function Note(props) {
+  const {state} = useLocation()
+  const navigate = useNavigate()
+  const [title, setTitle] = useState("")
+  const [content, setContent] = useState("")
+
+  useEffect(() => {
+    setTitle(state.title)
+    setContent(state.content)
+ }, [])
+
   return (
     <>
       <Navbar/>
       <div className='note-container'>
         <div className='note-title'>
-          Note
+          <input type="text" className="note-title" id="NoteTitle" placeholder="Note Title" defaultValue={state.title} onChange={(e) => {setTitle(e.target.value)}}/>
         </div>
         <div className='note-text'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <label for="exampleFormControlTextarea1" className="form-label"></label>
+          <textarea className="note-text" id="exampleFormControlTextarea1" rows="6" placeholder='Write Notes Here' defaultValue={state.content} onChange={(e) => {setContent(e.target.value)}}></textarea>
         </div>
         <button className='save-button'>
           Save Note
