@@ -28,7 +28,7 @@ export default function List(props) {
   }
   useEffect(() => {
     getNotes()
-    console.log(notes)
+    console.log("n", notes.length)
     
  }, [])
   
@@ -42,14 +42,23 @@ export default function List(props) {
           <p className="date">Date</p>
         </div>
         <div className="lists">
-          <div className="list">
+          {/* <div className="list">
             <div className='list-title'>Title</div>
             <div className='list-date'>Date</div>  
           </div> 
           <div className="list">
             <div className='list-title'>Title</div>
             <div className='list-date'>Date</div>  
-          </div> 
+          </div>  */}
+          {notes.map((note, i) => {
+            return(
+              <div key={i} className="list">
+                <div className='list-title'>{note.title}</div>
+                <div className='list-date'>{note.date_created.substr(0,10)}</div>  
+              </div> 
+            )
+          })}
+
         </div>
       </div>
     </>
