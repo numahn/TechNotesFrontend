@@ -24,7 +24,6 @@ export default function Note(props) {
  const handleClick = async (e) => {
   const response = await fetch("http://localhost:3001/note", requestOptions)
   const data = await response.json()
-  console.log(data)
   e.preventDefault()
   navigate("/list")
  }

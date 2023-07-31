@@ -39,7 +39,6 @@ export default function List(props) {
   const handleCreate = async () => {
     const response = await fetch("http://localhost:3001/notes", createOptions)
     const data = await response.json()
-    console.log(data)
     navigate("/note", {state: data.data})
   }
 
