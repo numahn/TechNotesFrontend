@@ -15,6 +15,20 @@ export default function Note(props) {
     setContent(state.content)
  }, [])
 
+ const requestOptions = {
+  method: 'PUT',
+  headers: {'Content-Type': 'application/json'},
+  body: JSON.stringify({notesID: state.notesID, title: title, content: content})
+}
+
+ const handleClick = async (e) => {
+  const response = await fetch("http://localhost:3001/note", requestOptions)
+  const data = await response.json()
+  console.log(data)
+  e.preventDefault()
+  navigate("/list")
+ }
+
   return (
     <>
       <Navbar/>
@@ -26,7 +40,7 @@ export default function Note(props) {
           <label for="exampleFormControlTextarea1" className="form-label"></label>
           <textarea className="note-text" id="exampleFormControlTextarea1" rows="6" placeholder='Write Notes Here' defaultValue={state.content} onChange={(e) => {setContent(e.target.value)}}></textarea>
         </div>
-        <button className='save-button'>
+        <button className='save-button' onClick={(e) => handleClick(e)}>
           Save Note
         </button>
       </div>
