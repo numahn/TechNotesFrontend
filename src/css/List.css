@@ -55,3 +55,18 @@
 .list:hover{
   background-color: #2e2e2e;
 }
+
+.create-button{
+  width: 250px;
+  height: 70px;
+  border-radius: 40px;
+  background: #0B77F5;
+  color: #FFF;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+  cursor: pointer;
+}
